@@ -1,2 +1,2 @@
 1. In the Pathway name_KEGG.xlsx file, we provide the name of the pathways, where the first column is the ko nunber and the second column is the name.
-2. all.edge.xlsx 文件介绍
+2. In the adj.npy file, we provide adjacency matrix of the pathways.
