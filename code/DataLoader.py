@@ -90,7 +90,6 @@ def data_extract(omicslist, undup_omic_genes, ko_genelist):
         feature = pd.DataFrame(feature, columns=undup_omic_genes[i])
         for g in ko_genelist:
             if g in undup_omic_genes[i]:
-                # This judgment is added for external validation
                 if g in omicslist[i].columns:
                     value = omicslist[i].loc[:, g]
                     feature.loc[:, g] = np.array(value)
