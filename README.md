@@ -22,3 +22,9 @@ source activate GraphPath
 ```
 python train.py
 ```
+
+## References
+```
+1. Ma T, Wang J. GraphPath: a graph attention model for molecular stratification with interpretability based on the pathway–pathway interaction network[J]. Bioinformatics, 2024, 40(4): btae165.
+2. Elmarakeby H A, Hwang J, Arafeh R, et al. Biologically informed deep neural network for prostate cancer discovery[J]. Nature, 2021, 598(7880): 348-352.
+```
