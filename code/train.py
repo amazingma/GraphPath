@@ -52,7 +52,6 @@ rint = np.random.randint(1, 1000, args.replications)
 # np.save('log/features.npy', features)
 # np.save('log/labels.npy', labels)
 # np.save('log/adj.npy', adj)
-
 features = np.load('log/features.npy')
 labels = np.load('log/labels.npy')
 adj = np.load('log/adj.npy')
@@ -84,9 +83,6 @@ def k_fold(k, x, y, epo):
         counter = 0
         for e in range(epo):
             if (e - counter) > 25 and e > 100:
-                # PATH = './model/model_' + str(r+1) + '_' + str(f+1) + '.pt'
-                # torch.save(model_best, PATH)
-                # model_test = torch.load(PATH)
                 break
             for bat, (x_bat, y_bat) in enumerate(loader):
                 loss_vali = train(e, x_bat, y_bat, x_valid, y_valid, model, criterion, opt)
