@@ -38,7 +38,6 @@ def gene_info(path, omics_files):
         omics_genelist.append(temp_gene)
     path_gene = pd.read_csv(path + "/kegg_gene.csv")
     pathsize = path_gene.groupby(['ko']).size()
-    # np.save('log/pathsize.npy', pathsize)
     pathlist = pathsize[((pathsize >= minsize) & (pathsize <= maxsize))].index.tolist()
     return omics_genelist, path_gene, pathlist
 
