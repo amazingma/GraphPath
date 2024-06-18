@@ -24,7 +24,6 @@ class GraphAttentionLayer(nn.Module):
 
         N = h.size()[1]
         a_input = torch.cat([h.repeat(1, 1, N).view(-1, N * N, self.out_features), h.repeat(1, N, 1)], dim=2).view(-1, N, N, 2 * self.out_features)
-        # [B, N, N]
         e = self.activ(torch.matmul(a_input, self.a).squeeze(3))
         zero_vec = -9e15 * torch.ones_like(e)
         attn = torch.where(adj > 0, e, zero_vec)
