@@ -17,16 +17,6 @@ def get_split(x, y, r):
     return x_train, y_train, x_vali, y_vali, x_test, y_test
 
 
-def get_skf(k):
-    skf = StratifiedKFold(n_splits=k, shuffle=True, random_state=666)
-    return skf
-
-
-def get_stratify(x, y, l):
-    x_train, x_vali, y_train, y_vali = train_test_split(x, y, test_size=l, stratify=y, shuffle=True, random_state=6666)
-    return x_train, x_vali, y_train, y_vali
-
-
 def get_balance(x, y):
     df = pd.DataFrame(y)
     index_pos = df[(df.iloc[:, 0] == 1)].index.tolist()
