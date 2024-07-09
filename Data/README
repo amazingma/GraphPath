@@ -1,3 +1,3 @@
 1. In the 'Pathway_name_KEGG.csv' file, we provide the names of KEGG pathways, where the first column is the ko nunber and the second column is the name.
 2. In the 'adj.npy' file, we provide the adjacency matrix of KEGG pathways.
-3. All data used in this study are deposited in https://doi.org/10.5281/zenodo.5163213.
+3. All data used in this study are deposited in https://doi.org/10.5281/zenodo.5163213. The '_database/prostate' folder contains the benchmark dataset and the independent test dataset, which are contained in the folders '_database/prostate/processed' and '_database/prostate/external_validation', respectively.
