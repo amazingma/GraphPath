@@ -3,7 +3,7 @@
 ## Introduction
 Achieving accurate and interpretable clinical predictions requires paramount attention to thoroughly characterizing patients at both the molecular and biological pathway levels. In this paper, we present GraphPath, a biological knowledge-driven graph neural network with multi-head self-attention mechanism that implements the pathway-pathway interaction network. We train GraphPath to classify the cancer status of patients with prostate cancer based on their multi-omics profiling. Experiment results show that our method outperforms P-NET and other baseline methods.
 
-## Getting Started
+## \u003e🚀Getting Started
 ### 1. Clone the repo
 ```
 git clone https://github.com/amazingma/GraphPath.git
